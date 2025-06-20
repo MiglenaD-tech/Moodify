@@ -1,0 +1,69 @@
+## Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build results
+bin/
+obj/
+[Ll]og/
+*.log
+
+## Rider project files
+.idea/
+
+## ASP.NET Core user secrets
+secrets.json
+
+## OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## npm & Node.js (ако имаш фронтенд)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+## Environment files
+.env
+*.env.*
+
+## Backup & temp
+*.bak
+*.tmp
+*.temp
+
+## Publish outputs
+*.publishsettings
+*.dbmdl
+*.pdb
+
+## JetBrains Rider
+.idea/
+
+## Resharper
+_ReSharper*/
+*.DotSettings.user
+
+## Package manager
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+
+## Others
+*.swp
+*.swo
+*.orig
+
+# IIS Express
+.vscode/
+.vscode/*
+.ionide/
+
+# EF Core migrations snapshot
+*Migrations/*Snapshot.cs
