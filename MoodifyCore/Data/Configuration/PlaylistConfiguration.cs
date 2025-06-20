@@ -12,6 +12,7 @@ namespace MoodifyCore.Data.Configuration
         entity.HasKey(e => e.Id).HasName("pk_playlist");
 
         entity.Property(e => e.Id)
+            .ValueGeneratedOnAdd()
             .HasColumnName("id")
             .HasColumnType("integer");
 

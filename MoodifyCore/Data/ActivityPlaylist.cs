@@ -8,8 +8,7 @@ namespace MoodifyCore.Data
         public int Id { get; set; }
         public int PlaylistId { get; set; }
         public int ActivityId { get; set; }
-        public DateTime LinkedAt { get; set; } = DateTime.UtcNow;
-
         public int UserId { get; set; }
+        public DateTime LinkedAt { get; set; } = DateTime.UtcNow;
     }
 }

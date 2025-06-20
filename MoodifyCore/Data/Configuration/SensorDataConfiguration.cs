@@ -12,8 +12,8 @@ namespace MoodifyCore.Data.Configuration
             entity.HasKey(e => e.Id).HasName("pk_sensor_data");
 
             entity.Property(e => e.Id)
-                  .HasColumnName("id")
                   .ValueGeneratedOnAdd()
+                  .HasColumnName("id")
                   .HasColumnType("integer");
 
             entity.Property(e => e.UserId)

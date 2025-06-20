@@ -12,12 +12,10 @@ public class SensorData
     public int Id { get; set; }
 
     [Required]
-    [ForeignKey("UserId")]
     public int UserId { get; set; }
 
-    [Required]
     [StringLength(200)]
-    public string DeviceId { get; set; } = null!;
+    public string? DeviceId { get; set; }
 
     [Required]
     public DateTime Timestamp { get; set; }
@@ -26,7 +24,7 @@ public class SensorData
 
     public int? StepCount { get; set; }
 
-    [StringLength(100)]
+    [StringLength(200)]
     public string? ActivityType { get; set; }
 
     public double? Latitude { get; set; }

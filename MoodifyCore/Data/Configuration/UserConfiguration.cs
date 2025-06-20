@@ -34,9 +34,25 @@ namespace MoodifyCore.Data.Configuration
                 .HasColumnName("created_at")
                 .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
+            entity.Property(e => e.GoogleId)
+                .HasMaxLength(512)
+                .HasColumnName("google_id");
+
+            entity.Property(e => e.DeviceId)
+                .HasMaxLength(512)
+                .HasColumnName("device_id");
+
             entity.Property(e => e.SpotifyAccessToken)
                 .HasMaxLength(512)
                 .HasColumnName("spotify_access_token");
+
+            entity.Property(e => e.SpotifyRefreshToken)
+                .HasMaxLength(512)
+                .HasColumnName("spotify_refresh_token");
+
+            entity.HasIndex(e => e.Email)
+              .IsUnique()
+              .HasDatabaseName("ix_user_email");
         }
     }
 }

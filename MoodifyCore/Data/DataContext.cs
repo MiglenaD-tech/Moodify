@@ -34,11 +34,7 @@ public partial class DataContext : DbContext
 
         SetDateTimeUtc(modelBuilder);
 
-        OnModelCreatingPartial(modelBuilder);
     }
-
-    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
-
     private static void SetDateTimeUtc(ModelBuilder builder)
     {
         var dateTimeConverter = new ValueConverter<DateTime, DateTime>(v => v, v => DateTime.SpecifyKind(v, DateTimeKind.Utc));

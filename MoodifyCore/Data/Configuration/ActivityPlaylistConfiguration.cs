@@ -26,11 +26,14 @@ namespace MoodifyCore.Data.Configuration
                   .HasColumnType("integer")
                   .IsRequired();
 
+            entity.Property(e => e.UserId)
+                  .HasColumnName("user_id")
+                  .HasColumnType("integer");
+
             entity.Property(e => e.LinkedAt)
                   .HasColumnName("linked_at")
                   .HasColumnType("timestamp")
                   .HasDefaultValueSql("CURRENT_TIMESTAMP");
-
 
         }
     }

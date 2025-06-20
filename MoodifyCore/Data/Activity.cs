@@ -10,7 +10,5 @@ public class Activity
     public int Id { get; set; }
     public string Name { get; set; } = null!;
     public string? Emoji { get; set; } // Optional
-    
-    [ForeignKey("UserId")]
     public int UserId { get; set; }
 } 

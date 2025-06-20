@@ -12,6 +12,7 @@ namespace MoodifyCore.Data.Configuration
             entity.HasKey(e => e.Id).HasName("pk_activity");
 
             entity.Property(e => e.Id)
+                  .ValueGeneratedOnAdd()
                   .HasColumnName("id")
                   .HasColumnType("integer");
 
@@ -24,6 +25,9 @@ namespace MoodifyCore.Data.Configuration
                   .HasColumnName("emoji")
                   .HasColumnType("varchar(10)");
 
+            entity.Property(e => e.UserId)
+                  .HasColumnName("user_id")
+                  .HasColumnType("integer");
         }
     }
 }

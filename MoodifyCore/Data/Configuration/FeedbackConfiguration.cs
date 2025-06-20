@@ -27,6 +27,17 @@ namespace MoodifyCore.Data.Configuration
                   .HasColumnType("integer")
                   .IsRequired();
 
+
+            entity.Property(e => e.ActivityId)
+                  .HasColumnName("activity_id")
+                  .HasColumnType("integer")
+                  .IsRequired();
+
+            entity.Property(e => e.PlaylistId)
+                  .HasColumnName("playlist_id")
+                  .HasColumnType("integer")
+                  .IsRequired();
+
             entity.Property(e => e.IsCorrect)
                   .HasColumnName("is_correct")
                   .HasColumnType("boolean")
