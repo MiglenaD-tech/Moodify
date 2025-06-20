@@ -22,6 +22,7 @@ public partial class DataContext : DbContext
     public virtual DbSet<ActivityPlaylist> ActivityPlaylists { get; set; }
     public virtual DbSet<SensorData> SensorDatas { get; set; }
     public virtual DbSet<Feedback> Feedbacks { get; set; }
+    public virtual DbSet<ActivityLog> ActivityLogs { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -31,6 +32,7 @@ public partial class DataContext : DbContext
         modelBuilder.ApplyConfiguration(new ActivityPlaylistConfiguration());
         modelBuilder.ApplyConfiguration(new SensorDataConfiguration());
         modelBuilder.ApplyConfiguration(new FeedbackConfiguration());
+        modelBuilder.ApplyConfiguration(new ActivityLogConfiguration());
 
         SetDateTimeUtc(modelBuilder);
 

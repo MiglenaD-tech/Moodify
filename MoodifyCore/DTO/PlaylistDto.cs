@@ -6,6 +6,6 @@ namespace MoodifyCore.DTO
         public string Name { get; set; } = null!;
         public string ExternalId { get; set; } = null!;
         public string Platform { get; set; } = null!;
-        public int OwnerUserId { get; set; }
+        public int UserId { get; set; }
     }
 } 
