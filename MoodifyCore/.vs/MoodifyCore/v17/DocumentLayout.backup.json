@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Moodify\\MoodifyCore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|d:\\moodify\\moodifycore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|d:\\moodify\\moodifycore\\data\\configuration\\sensordataconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|solutionrelative:data\\configuration\\sensordataconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|d:\\moodify\\moodifycore\\data\\configuration\\playlistconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|solutionrelative:data\\configuration\\playlistconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|d:\\moodify\\moodifycore\\data\\configuration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|solutionrelative:data\\configuration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|d:\\moodify\\moodifycore\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|solutionrelative:data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|d:\\moodify\\moodifycore\\data\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|solutionrelative:data\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|d:\\moodify\\moodifycore\\data\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|solutionrelative:data\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|d:\\moodify\\moodifycore\\data\\activityplaylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693C005F-DBEA-4569-AC90-C492289E0825}|MoodifyCore.csproj|solutionrelative:data\\activityplaylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 571,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SensorDataConfiguration.cs",
+              "DocumentMoniker": "D:\\Moodify\\MoodifyCore\\Data\\Configuration\\SensorDataConfiguration.cs",
+              "RelativeDocumentMoniker": "Data\\Configuration\\SensorDataConfiguration.cs",
+              "ToolTip": "D:\\Moodify\\MoodifyCore\\Data\\Configuration\\SensorDataConfiguration.cs",
+              "RelativeToolTip": "Data\\Configuration\\SensorDataConfiguration.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAlwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T11:16:23.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Moodify\\MoodifyCore\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Moodify\\MoodifyCore\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T11:15:59.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlaylistConfiguration.cs",
+              "DocumentMoniker": "D:\\Moodify\\MoodifyCore\\Data\\Configuration\\PlaylistConfiguration.cs",
+              "RelativeDocumentMoniker": "Data\\Configuration\\PlaylistConfiguration.cs",
+              "ToolTip": "D:\\Moodify\\MoodifyCore\\Data\\Configuration\\PlaylistConfiguration.cs",
+              "RelativeToolTip": "Data\\Configuration\\PlaylistConfiguration.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAlwCQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T11:13:45.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "D:\\Moodify\\MoodifyCore\\Data\\Configuration\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "Data\\Configuration\\UserConfiguration.cs",
+              "ToolTip": "D:\\Moodify\\MoodifyCore\\Data\\Configuration\\UserConfiguration.cs",
+              "RelativeToolTip": "Data\\Configuration\\UserConfiguration.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T11:11:03.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "D:\\Moodify\\MoodifyCore\\Data\\Feedback.cs",
+              "RelativeDocumentMoniker": "Data\\Feedback.cs",
+              "ToolTip": "D:\\Moodify\\MoodifyCore\\Data\\Feedback.cs",
+              "RelativeToolTip": "Data\\Feedback.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T16:44:14.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ActivityPlaylist.cs",
+              "DocumentMoniker": "D:\\Moodify\\MoodifyCore\\Data\\ActivityPlaylist.cs",
+              "RelativeDocumentMoniker": "Data\\ActivityPlaylist.cs",
+              "ToolTip": "D:\\Moodify\\MoodifyCore\\Data\\ActivityPlaylist.cs",
+              "RelativeToolTip": "Data\\ActivityPlaylist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T16:42:43.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Playlist.cs",
+              "DocumentMoniker": "D:\\Moodify\\MoodifyCore\\Data\\Playlist.cs",
+              "RelativeDocumentMoniker": "Data\\Playlist.cs",
+              "ToolTip": "D:\\Moodify\\MoodifyCore\\Data\\Playlist.cs",
+              "RelativeToolTip": "Data\\Playlist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T16:41:07.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Moodify\\MoodifyCore\\Data\\User.cs",
+              "RelativeDocumentMoniker": "Data\\User.cs",
+              "ToolTip": "D:\\Moodify\\MoodifyCore\\Data\\User.cs",
+              "RelativeToolTip": "Data\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T13:14:04.483Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+@MoodifyCore_HostAddress = http://localhost:5191
+
+GET {{MoodifyCore_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
