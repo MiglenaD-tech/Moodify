@@ -67,3 +67,5 @@ project.fragment.lock.json
 
 # EF Core migrations snapshot
 *Migrations/*Snapshot.cs
+
+appsettings.json

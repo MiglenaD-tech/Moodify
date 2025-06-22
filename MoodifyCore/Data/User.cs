@@ -19,4 +19,6 @@ public class User
     public string? DeviceId { get; set; }
     public string? SpotifyAccessToken { get; set; }
     public string? SpotifyRefreshToken { get; set; }
+    public DateTime? SpotifyTokenExpiresAt { get; set; }
+    public string? TimeZone { get; set; }
 }

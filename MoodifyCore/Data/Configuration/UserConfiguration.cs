@@ -50,6 +50,14 @@ namespace MoodifyCore.Data.Configuration
                 .HasMaxLength(512)
                 .HasColumnName("spotify_refresh_token");
 
+            entity.Property(e => e.SpotifyTokenExpiresAt)
+                .HasColumnType("timestamp with time zone")
+                .HasColumnName("spotify_token_expires_at");
+
+            entity.Property(e => e.TimeZone)
+                .HasMaxLength(255)
+                .HasColumnName("time_zone");
+
             entity.HasIndex(e => e.Email)
               .IsUnique()
               .HasDatabaseName("ix_user_email");

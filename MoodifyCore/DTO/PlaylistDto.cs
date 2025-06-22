@@ -7,5 +7,7 @@ namespace MoodifyCore.DTO
         public string ExternalId { get; set; } = null!;
         public string Platform { get; set; } = null!;
         public int UserId { get; set; }
+        public string? ImageUrl { get; set; }
     }
+
 } 

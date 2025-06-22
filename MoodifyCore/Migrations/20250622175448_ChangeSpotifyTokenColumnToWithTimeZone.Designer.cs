@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MoodifyCore.Migrations
 {
     [DbContext(typeof(MoodifyDataContext))]
-    [Migration("20250620145304_AddActivityLog")]
-    partial class AddActivityLog
+    [Migration("20250622175448_ChangeSpotifyTokenColumnToWithTimeZone")]
+    partial class ChangeSpotifyTokenColumnToWithTimeZone
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,23 +34,57 @@ namespace MoodifyCore.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Emoji")
-                        .HasColumnType("varchar(10)")
-                        .HasColumnName("emoji");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("varchar(100)")
                         .HasColumnName("name");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("integer")
-                        .HasColumnName("user_id");
-
                     b.HasKey("Id")
                         .HasName("pk_activity");
 
                     b.ToTable("activity", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Walking"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Running"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "On Foot"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "On Bicycle"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "In Vehicle"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Still"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Name = "Tilting"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Name = "Unknown"
+                        });
                 });
 
             modelBuilder.Entity("MoodifyCore.Data.ActivityLog", b =>
@@ -183,6 +217,11 @@ namespace MoodifyCore.Migrations
                         .HasColumnType("character varying(255)")
                         .HasColumnName("external_id");
 
+                    b.Property<string>("ImageUrl")
+                        .HasMaxLength(512)
+                        .HasColumnType("character varying(512)")
+                        .HasColumnName("image_url");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(255)
@@ -305,6 +344,15 @@ namespace MoodifyCore.Migrations
                         .HasMaxLength(512)
                         .HasColumnType("character varying(512)")
                         .HasColumnName("spotify_refresh_token");
+
+                    b.Property<DateTime?>("SpotifyTokenExpiresAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("spotify_token_expires_at");
+
+                    b.Property<string>("TimeZone")
+                        .HasMaxLength(255)
+                        .HasColumnType("character varying(255)")
+                        .HasColumnName("time_zone");
 
                     b.HasKey("Id")
                         .HasName("pk_user");

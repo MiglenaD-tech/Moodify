@@ -11,5 +11,6 @@ public class Playlist
     public string Name { get; set; } = null!;
     public string ExternalId { get; set; } = null!; // Spotify/YouTube/etc
     public string Platform { get; set; } = null!; // "Spotify", "YouTube", etc
+    public string? ImageUrl { get; set; }
     public int UserId { get; set; }
 } 

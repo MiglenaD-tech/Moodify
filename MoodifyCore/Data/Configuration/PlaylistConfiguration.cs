@@ -35,6 +35,9 @@ namespace MoodifyCore.Data.Configuration
             .HasColumnName("user_id")
             .HasColumnType("integer");
 
+        entity.Property(e => e.ImageUrl)
+              .HasMaxLength(512)
+              .HasColumnName("image_url");
         }
     }
 }

@@ -12,5 +12,5 @@ public class Feedback
     public int UserId { get; set; }
     public int? PlaylistId { get; set; } 
     public int? ActivityId { get; set; }
-    public bool IsCorrect { get; set; } //yes or no or with 3 emojies
+    public bool IsCorrect { get; set; } //yes or no 
 } 

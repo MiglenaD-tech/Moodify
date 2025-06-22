@@ -21,13 +21,16 @@ namespace MoodifyCore.Data.Configuration
                   .HasColumnType("varchar(100)")
                   .IsRequired();
 
-            entity.Property(e => e.Emoji)
-                  .HasColumnName("emoji")
-                  .HasColumnType("varchar(10)");
-
-            entity.Property(e => e.UserId)
-                  .HasColumnName("user_id")
-                  .HasColumnType("integer");
+            entity.HasData(
+                new Activity { Id = 1, Name = "Walking" },
+                new Activity { Id = 2, Name = "Running" },
+                new Activity { Id = 3, Name = "On Foot" },
+                new Activity { Id = 4, Name = "On Bicycle" },
+                new Activity { Id = 5, Name = "In Vehicle" },
+                new Activity { Id = 6, Name = "Still" },
+                new Activity { Id = 7, Name = "Tilting" },
+                new Activity { Id = 8, Name = "Unknown" }
+            );
         }
     }
 }

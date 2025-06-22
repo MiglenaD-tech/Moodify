@@ -7,5 +7,7 @@
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public bool IsNewUser { get; set; } = false;
+        public string? JwtToken { get; set; }
+        public string? Message { get; set; }
     }
 }

@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace MoodifyCore.Migrations
 {
-    [DbContext(typeof(DataContext))]
+    [DbContext(typeof(MoodifyDataContext))]
     [Migration("20250620125548_InitialCreate")]
     partial class InitialCreate
     {

@@ -5,13 +5,13 @@ using System.Data;
 
 namespace MoodifyCore.Data;
 
-public partial class DataContext : DbContext
+public class MoodifyDataContext : DbContext
 {
-    public DataContext()
+    public MoodifyDataContext()
     {
     }
 
-    public DataContext(DbContextOptions<DataContext> options)
+    public MoodifyDataContext(DbContextOptions<MoodifyDataContext> options)
         : base(options)
     {
     }

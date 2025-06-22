@@ -4,7 +4,5 @@ namespace MoodifyCore.DTO
     {
         public int Id { get; set; }
         public string Name { get; set; } = null!;
-        public string? Emoji { get; set; }
-        public int UserId { get; set; }
     }
 } 
