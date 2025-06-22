@@ -68,4 +68,6 @@ project.fragment.lock.json
 # EF Core migrations snapshot
 *Migrations/*Snapshot.cs
 
+# App settings (локални конфигурации)
 appsettings.json
+appsettings.*.json
