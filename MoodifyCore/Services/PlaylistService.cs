@@ -6,6 +6,7 @@ namespace MoodifyCore.Services
     public interface IPlaylistService
     {
         List<PlaylistDto> GetPlaylistsForUser(int userId);
+        List<ActivityPlaylistDto> GetPlaylistsForActivity(int activityId);
     }
     public class PlaylistService : IPlaylistService
     {
@@ -14,6 +15,11 @@ namespace MoodifyCore.Services
         public PlaylistService(MoodifyDataContext dbContext)
         {
             this.dbContext = dbContext;
+        }
+
+        public List<ActivityPlaylistDto> GetPlaylistsForActivity(int activityId)
+        {
+            throw new NotImplementedException();
         }
 
         public List<PlaylistDto> GetPlaylistsForUser(int userId)

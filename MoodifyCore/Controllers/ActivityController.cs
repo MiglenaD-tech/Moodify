@@ -36,5 +36,16 @@ namespace MoodifyCore.Controllers
             var activityDto = mapper.Map<ActivityDto>(activity);
             return Ok(activityDto);
         }
+
+        [HttpGet("{activityId}/playlists")]
+        public IActionResult GetPlaylistsForActivity(int activityId)
+        {
+            var playlistsBasedByActivity = activityService.GetPlaylistsByActivity(activityId);
+
+            // мапване към DTO
+            var playlistDtos = mapper.Map<List<PlaylistDto>>(playlistsBasedByActivity);
+
+            return Ok(playlistDtos);
+        }
     }
 }

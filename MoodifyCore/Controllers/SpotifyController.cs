@@ -21,18 +21,6 @@ namespace MoodifyCore.Controllers
             this.configuration = configuration;
         }
 
-        /*
-        [HttpGet("login")]
-        public IActionResult Login()
-        {
-            var clientId = "твоя-client-id";
-            var redirectUri = "https://твояапи/api/spotify/callback";
-            var scope = "playlist-read-private";
-            var state = Guid.NewGuid().ToString(); // За сигурност
-
-            var url = $"https://accounts.spotify.com/authorize?response_type=code&client_id={clientId}&redirect_uri={redirectUri}&scope={scope}&state={state}";
-            return Redirect(url);
-        }*/
 
         // STEP 1: Redirect user to Spotify login
         [HttpGet("login")]
@@ -52,7 +40,7 @@ namespace MoodifyCore.Controllers
             return Redirect(authUrl);
         }
 
-
+        
         // STEP 2: Callback from Spotify (Spotify will redirect here with code & state)
         [HttpGet("callback")]
         public IActionResult Callback([FromQuery] string code, [FromQuery] string state)
@@ -95,5 +83,6 @@ namespace MoodifyCore.Controllers
 
             return Ok("Playlists synced successfully.");
         }
+        
     }
 }

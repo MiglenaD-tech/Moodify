@@ -10,4 +10,5 @@ namespace MoodifyCore.DTO
         public string? ImageUrl { get; set; }
     }
 
-} 
+
+}

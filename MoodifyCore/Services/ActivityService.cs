@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MoodifyCore.Data;
-using MoodifyCore.DTO;
+﻿using MoodifyCore.Data;
 
 namespace MoodifyCore.Services
 {
@@ -8,6 +6,8 @@ namespace MoodifyCore.Services
     {
         List<Activity> GetAllActivities();
         Activity? GetById(int id);
+        List<Playlist> GetPlaylistsByActivity(int activityId);
+
     }
 
     public class ActivityService : IActivityService
@@ -33,6 +33,14 @@ namespace MoodifyCore.Services
             var activity = dbContext.Activities.FirstOrDefault(x => x.Id == id);
 
             return activity;
+        }
+
+        public List<Playlist> GetPlaylistsByActivity(int activityId)
+        {
+            return (from ap in dbContext.ActivityPlaylists
+                    join p in dbContext.Playlists on ap.PlaylistId equals p.Id
+                    where ap.ActivityId == activityId
+                    select p).ToList();
         }
     }
 }

@@ -7,19 +7,21 @@ namespace MoodifyCore.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<Activity> entity)
         {
-            entity.ToTable("activity");
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity.HasKey(e => e.Id).HasName("pk_activity");
+            entity
+                .ToTable("activity")
+                .HasCharSet("utf8")
+                .UseCollation("utf8_general_ci");
 
             entity.Property(e => e.Id)
-                  .ValueGeneratedOnAdd()
-                  .HasColumnName("id")
-                  .HasColumnType("integer");
+                .HasColumnType("int(11)")
+                .HasColumnName("id");
 
             entity.Property(e => e.Name)
-                  .HasColumnName("name")
-                  .HasColumnType("varchar(100)")
-                  .IsRequired();
+                .IsRequired()
+                .HasMaxLength(100)
+                .HasColumnName("name");
 
             entity.HasData(
                 new Activity { Id = 1, Name = "Walking" },

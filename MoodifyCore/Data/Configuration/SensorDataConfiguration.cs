@@ -7,49 +7,21 @@ namespace MoodifyCore.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<SensorData> entity)
         {
-            entity.ToTable("sensor_data");
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity.HasKey(e => e.Id).HasName("pk_sensor_data");
+            entity.ToTable("sensor_data")
+                .HasCharSet("utf8")
+                .UseCollation("utf8_general_ci");
 
-            entity.Property(e => e.Id)
-                  .ValueGeneratedOnAdd()
-                  .HasColumnName("id")
-                  .HasColumnType("integer");
-
-            entity.Property(e => e.UserId)
-                  .HasColumnName("user_id")
-                  .HasColumnType("integer")
-                  .IsRequired();
-
-            entity.Property(e => e.DeviceId)
-                  .HasColumnName("device_id")
-                  .HasColumnType("varchar(200)")
-                  .IsRequired();
-
-            entity.Property(e => e.Timestamp)
-                  .HasColumnName("timestamp")
-                  .HasColumnType("timestamp")
-                  .IsRequired();
-
-            entity.Property(e => e.HeartRate)
-                  .HasColumnName("heart_rate")
-                  .HasColumnType("integer");
-
-            entity.Property(e => e.StepCount)
-                  .HasColumnName("step_count")
-                  .HasColumnType("integer");
-
-            entity.Property(e => e.ActivityType)
-                  .HasColumnName("activity_type")
-                  .HasColumnType("varchar(100)");
-
-            entity.Property(e => e.Latitude)
-                  .HasColumnName("latitude")
-                  .HasColumnType("double precision");
-
-            entity.Property(e => e.Longitude)
-                  .HasColumnName("longitude")
-                  .HasColumnType("double precision");
+            entity.Property(e => e.Id).HasColumnType("int(11)").HasColumnName("id");
+            entity.Property(e => e.UserId).HasColumnType("int(11)").HasColumnName("user_id");
+            entity.Property(e => e.DeviceId).HasMaxLength(200).HasColumnName("device_id");
+            entity.Property(e => e.Timestamp).HasColumnType("datetime").HasColumnName("timestamp");
+            entity.Property(e => e.HeartRate).HasColumnType("int(11)").HasColumnName("heart_rate");
+            entity.Property(e => e.StepCount).HasColumnType("int(11)").HasColumnName("step_count");
+            entity.Property(e => e.ActivityType).HasMaxLength(200).HasColumnName("activity_type");
+            entity.Property(e => e.Latitude).HasColumnType("float").HasColumnName("latitude");
+            entity.Property(e => e.Longitude).HasColumnType("float").HasColumnName("longitude");
 
         }
     }

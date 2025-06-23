@@ -57,7 +57,7 @@ namespace MoodifyCore.Services
             return user;
         }
         */
-
+       
         public void UpdateSpotifyTokens(int userId, string accessToken, string refreshToken, int expiresInSeconds)
         {
             var user = dbContext.Users.FirstOrDefault(u => u.Id == userId);
@@ -142,5 +142,6 @@ namespace MoodifyCore.Services
             dbContext.SaveChanges();
             return user.SpotifyAccessToken;
         }
+        
     }
 }

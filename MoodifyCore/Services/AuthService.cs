@@ -59,6 +59,12 @@ namespace MoodifyCore.Services
             try
             {
                 payload = await GoogleJsonWebSignature.ValidateAsync(requestDto.IdToken);
+                if (payload.ExpirationTimeSeconds.HasValue &&
+                    DateTimeOffset.FromUnixTimeSeconds(payload.ExpirationTimeSeconds.Value) < DateTimeOffset.UtcNow)
+                    {
+                        return new GoogleLoginResponseDto { Message = "Expired Google token" };
+                    }
+
             }
             catch (Exception)
             {

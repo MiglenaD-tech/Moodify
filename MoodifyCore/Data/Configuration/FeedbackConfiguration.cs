@@ -7,42 +7,18 @@ namespace MoodifyCore.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<Feedback> entity)
         {
-            entity.ToTable("feedback");
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity.HasKey(e => e.Id).HasName("pk_feedback");
+            entity.ToTable("feedback")
+                .HasCharSet("utf8")
+                .UseCollation("utf8_general_ci");
 
-            entity.Property(e => e.Id)
-                  .HasColumnName("id")
-                  .ValueGeneratedOnAdd()
-                  .HasColumnType("integer");
-
-            entity.Property(e => e.FeedbackTime)
-                  .HasColumnName("feedback_time")
-                  .HasColumnType("timestamp")
-                  .HasDefaultValueSql("CURRENT_TIMESTAMP")
-                  .IsRequired();
-
-            entity.Property(e => e.UserId)
-                  .HasColumnName("user_id")
-                  .HasColumnType("integer")
-                  .IsRequired();
-
-
-            entity.Property(e => e.ActivityId)
-                  .HasColumnName("activity_id")
-                  .HasColumnType("integer")
-                  .IsRequired();
-
-            entity.Property(e => e.PlaylistId)
-                  .HasColumnName("playlist_id")
-                  .HasColumnType("integer")
-                  .IsRequired();
-
-            entity.Property(e => e.IsCorrect)
-                  .HasColumnName("is_correct")
-                  .HasColumnType("boolean")
-                  .HasDefaultValue(false);
-
+            entity.Property(e => e.Id).HasColumnType("int(11)").HasColumnName("id");
+            entity.Property(e => e.FeedbackTime).HasColumnType("datetime").HasColumnName("feedback_time").HasDefaultValueSql("current_timestamp()");
+            entity.Property(e => e.UserId).HasColumnType("int(11)").HasColumnName("user_id");
+            entity.Property(e => e.PlaylistId).HasColumnType("int(11)").HasColumnName("playlist_id");
+            entity.Property(e => e.ActivityId).HasColumnType("int(11)").HasColumnName("activity_id");
+            entity.Property(e => e.IsCorrect).HasColumnType("bit").HasColumnName("is_correct");
         }
     }
 }
