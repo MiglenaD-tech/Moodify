@@ -5,6 +5,8 @@ using MoodifyCore.Services;
 
 namespace MoodifyCore.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class ActivityController : ControllerBase
     {
         private readonly IActivityService activityService;

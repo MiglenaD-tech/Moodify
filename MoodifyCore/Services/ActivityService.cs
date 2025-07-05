@@ -22,7 +22,7 @@ namespace MoodifyCore.Services
         public List<Activity> GetAllActivities()
         {
             var activities =  dbContext.Activities
-                .OrderBy(a => a.Name)
+                .OrderBy(p => p.Id)
                 .ToList();
 
             return activities;
